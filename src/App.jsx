@@ -12,6 +12,8 @@ import Userhome from './Pages/Userhome/Userhome'
 import Operatorhome from './Pages/Operatorhome/Operatorhome'
 import Kirim from './Pages/Kirim/Kirim'
 import CreateOrder from './Pages/Createorder/createorder'
+import Buyurtmatarix from './Pages/Buyurtmatarix/Buyurtmatarix'
+import Bankdata from './Pages/Bankdata/Bankdata'
 
 function App() {
  
@@ -19,15 +21,17 @@ function App() {
   return (
     <>
    <Routes>
-    <Route path='register' element={<Register></Register>}></Route>
-    <Route path='login' element={<Login></Login>}></Route>
-    <Route path='dashboard' element={<Dashboard></Dashboard>}></Route>
-    <Route path='dashboardpages' element={<Dashboardpages></Dashboardpages>}></Route>
-    <Route path='hisobot' element={<Hisobot></Hisobot>}></Route>
-    <Route path='userhome' element={<Userhome></Userhome>}></Route>
-    <Route path='operatorhome' element={<Operatorhome></Operatorhome>}></Route>
-    <Route path='kirimqoshish' element={<Kirim></Kirim>}></Route>
-    <Route path='createorder' element={<CreateOrder></CreateOrder>}></Route>
+    <Route path='/register' element={<Register></Register>}></Route>
+    <Route path='/login' element={<Login></Login>}></Route>
+    <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>``
+    <Route path='/dashboardpages' element={<Dashboardpages></Dashboardpages>}></Route>
+    <Route path='/hisobot' element={<Hisobot></Hisobot>}></Route>
+    <Route path='/userhome' element={<Userhome></Userhome>}></Route>
+    <Route path='/operatorhome' element={<Operatorhome></Operatorhome>}></Route>
+    <Route path='/kirimqoshish' element={<Kirim></Kirim>}></Route>
+    <Route path='/createorder' element={<CreateOrder></CreateOrder>}></Route>
+    <Route path='/buyurtmatarix' element={<Buyurtmatarix></Buyurtmatarix>}></Route>
+    <Route path='/enterbankdata' element={<Bankdata></Bankdata>}></Route>
     <Route path='/' element={<Home></Home>}></Route>
     <Route path='*' element={<Error></Error>}></Route>
    </Routes>

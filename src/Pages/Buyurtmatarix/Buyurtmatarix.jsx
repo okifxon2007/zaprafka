@@ -1,19 +1,13 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
-const Userhome = () => {
+const Buyurtmatarix = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const nav = useNavigate('')
-  function tarixnav(){
-    nav('/buyurtmatarix')
-  }
- 
 
   return (
     <div className="min-h-screen bg-gray-100">
       
       <nav className="bg-gray-900 text-white px-6 py-4 flex justify-between items-center shadow-lg">
-        <h1 className="text-xl font-bold tracking-wide c">My CRM</h1>
+        <h1 className="text-xl font-bold tracking-wide">My CRM</h1>
         <button
           className="md:hidden block text-white focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -41,18 +35,17 @@ const Userhome = () => {
           <a
             href="#"
             className="block py-3 md:inline-block px-4 hover:bg-gray-700 rounded-md transition duration-300"
-            onClick={tarixnav}
           >
             Buyurtmalar tarixi
           </a>
         </div>
       </nav>
 
-      {/* Main Content */}
+      
       <div className="flex items-center justify-center mt-4">
         <div className="bg-white shadow-2xl rounded-2xl p-8 max-w-xl text-center">
           <h2 className="text-2xl font-extrabold text-gray-800">
-            Welcome to the CRM!
+            Buyurtmalar tarixi
           </h2>
           
         </div>
@@ -95,4 +88,4 @@ const Userhome = () => {
   );
 };
 
-export default Userhome;
+export default Buyurtmatarix;
