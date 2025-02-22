@@ -11,7 +11,7 @@ import Hisobot from './Pages/Hisobot/Hisobot'
 import Userhome from './Pages/Userhome/Userhome'
 import Operatorhome from './Pages/Operatorhome/Operatorhome'
 import Kirim from './Pages/Kirim/Kirim'
-import CreateOrder from './Pages/Createorder/createorder'
+import CreateOrder from './Pages/Createorder/Createorder'
 import Buyurtmatarix from './Pages/Buyurtmatarix/Buyurtmatarix'
 import Bankdata from './Pages/Bankdata/Bankdata'
 
